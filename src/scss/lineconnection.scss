@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+.adj-line {
+	content: '';
+	border: $border;
+	width: 40px;
+	position: absolute;
+	top: 90px;
+	right: -40px;
+	@include line;
+}
+.rightline{
+    content: '';
+    @include rightline;
+    width: $width;
+    position: absolute;
+    top: 90px;
+    left: 180px;
+    visibility: hidden;
+}
+
+.leftline{
+    position: absolute;
+	width:  $width;
+	height: $height;
+	@include leftline;
+	top: -29px;
+	left: -20px;
+    visibility: hidden;
+}
+
+.lineconnect {
+    position: absolute;
+    width: 880px;
+    border: 1px solid #8E8C8C;
+     @include line;
+    top: 210px;
+    right: -20px;
+    z-index: 2;
+  }  
+
+  

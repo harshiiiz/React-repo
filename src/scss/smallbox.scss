@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+
+.parts {
+    margin: 0 8px 0 8px;
+    height: 40px;
+    border-radius: $borderrad;
+  }
+  .part1{
+    margin-top: 20px;
+      margin-bottom: 10px;
+      background: $redbg;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 20px;
+      color: $whitebg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .part2{
+    background:$yellowbg ;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 10px;
+  }
+  .part3{
+    margin-top: 10px;
+      margin-bottom: 20px;
+      background: $greenbg;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 10px;
+      @include flexcenter;
+  }
+  

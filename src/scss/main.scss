@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+
+@import 'variables.scss';
+@import 'card.scss';
+@import 'smallbox.scss';
+@import 'lineconnection.scss';
+
+
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+     background-color: $whitebg;
+	 font-family: 'Rubik',sans-serif;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 40px;
+    margin-top: 120px;
+}
+.cardContainer .box:nth-child(10) .rightline{
+    display: none; 
+  }
+  .cardContainer .box .lineconnect{
+    width:220px;
+  }
+  .cardContainer .box:nth-child(10) .lineconnect{
+    visibility: hidden;
+  }
+  @media only screen and (min-width: 1840px) and (max-width: 2060px) {
+  
+    .cardContainer .box:nth-child(9) .lineconnect{
+      visibility: hidden; 
+    }
+    
+    .cardContainer .box:nth-child(8) .rightline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(9) .leftline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(8) .adj-line{
+      visibility: hidden; 
+    }
+  }
+  @media only screen and (min-width: 1620px) and (max-width: 1839px){
+    
+    .cardContainer .box:nth-child(7) .rightline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(8) .leftline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(8) .lineconnect{
+      visibility: hidden; 
+    }
+    .cardContainer .box:nth-child(9) .lineconnect{
+      visibility: hidden; 
+    }
+    
+    .cardContainer .box:nth-child(7) .adj-line{
+      visibility: hidden; 
+    }
+  }
+  
+  @media screen and (min-width: 1400px) and (max-width: 1619px) {
+    
+    .cardContainer .box:nth-child(7) .leftline{
+      visibility: visible; 
+    }
+    
+    .cardContainer .box:nth-child(6) .rightline{
+      visibility: visible;
+    }
+    .cardContainer .box:nth-child(6) .adj-line{
+      visibility: hidden;
+    }
+  
+    .cardContainer .box:nth-child(7) .lineconnect{
+      visibility: hidden;
+    }
+    .cardContainer .box:nth-child(8) .lineconnect{
+      visibility: hidden;
+    }
+    .cardContainer .box:nth-child(9) .lineconnect{
+      visibility: hidden;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1180px) and (max-width: 1399px) {
+    
+    .cardContainer .box:nth-child(6) .leftline{
+      visibility: visible; 
+    }
+    
+    .cardContainer .box:nth-child(5) .rightline{
+      visibility: visible;
+    }
+  
+    .cardContainer .box:nth-child(6) .lineconnect{
+      visibility: hidden;
+    }
+  
+    .cardContainer .box:nth-child(7) .lineconnect{
+      visibility: hidden;
+    }
+    .cardContainer .box:nth-child(8) .lineconnect{
+      visibility: hidden;
+    }
+    .cardContainer .box:nth-child(9) .lineconnect{
+      visibility: hidden;
+    }
+    
+    .cardContainer .box:nth-child(5) .adj-line{
+      visibility:  hidden;
+    }
+    
+  }
+  
+  @media screen and (min-width: 960px) and (max-width: 1179px) {
+   
+    .cardContainer .box:nth-child(5) .leftline{
+      visibility: visible; 
+    }
+    
+    .cardContainer .box:nth-child(9) .leftline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(4n) .adj-line{
+      visibility:  hidden;
+    }
+    
+    .cardContainer .box:nth-child(4n) .rightline{
+      visibility: visible;
+    }
+  
+    
+  
+    .cardContainer .box:nth-child(9) .lineconnect{
+      visibility: hidden;
+    }
+    
+  
+  }
+  @media screen and (min-width: 755px) and (max-width: 959px) {
+    .cardContainer .box:nth-child(3n) .adj-line{
+      visibility:  hidden;
+    }
+    
+    .cardContainer .box:nth-child(4) .leftline{
+      visibility: visible; 
+    }
+  
+    .cardContainer .box:nth-child(7) .leftline{
+      visibility: visible; 
+    }
+    
+    .cardContainer .box:nth-child(3n) .rightline{
+      visibility: visible;
+    }
+  
+    
+    .cardContainer .box:nth-child(10) .leftline{
+      visibility: visible;
+    }
+    
+  
+  }
+  
+  @media screen and (min-width: 520px) and (max-width: 754px) {
+    
+    .cardContainer .box:nth-child(3) .leftline{
+      visibility: visible; 
+    }
+  
+    .cardContainer .box:nth-child(5) .leftline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(7) .leftline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(9) .leftline{
+      visibility: visible; 
+    }
+    .cardContainer .box:nth-child(2) .rightline{
+      visibility: visible;
+    }
+    .cardContainer .box:nth-child(4) .rightline{
+      visibility: visible;
+    }
+    .cardContainer .box:nth-child(6) .rightline{
+      visibility: visible;
+    }
+  
+    .cardContainer .box:nth-child(8) .rightline{
+      visibility: visible;
+    }
+    .cardContainer .box:nth-child(2) .adj-line{
+      visibility:  hidden;
+    }
+    .cardContainer .box:nth-child(4) .adj-line{
+      visibility:  hidden;
+    }
+    .cardContainer .box:nth-child(6) .adj-line{
+      visibility:  hidden;
+    }
+    .cardContainer .box:nth-child(8) .adj-line{
+      visibility:  hidden;
+    }
+    
+  
+  }
+  
+  
+  
+  @media screen  and (max-width: 519px) {
+    
+    .cardContainer .box:not(:first-child) .leftline{
+      visibility: visible; 
+    }
+  
+    
+    .cardContainer .box:not(:last-child) .rightline{
+      visibility: visible;
+    }
+    .cardContainer .box:not(:last-child) .adj-line{
+      visibility:  hidden;
+    }
+    
+    
+    
+  
+  }
+  
+
+

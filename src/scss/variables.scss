@@ -1,0 +1,37 @@
+$whitebg:#f0f0f0;
+$borderrad:8px;
+$border: 1px solid #8E8C8C;
+$width: 20px;
+$height: 120px;
+$redbg:#f17d7d;
+$yellowbg:rgba(255, 230, 0, 0.97);
+$greenbg:#46eec6;
+$circlebg:linear-gradient(180deg, rgba(248, 178, 62, 0.984844) 0%, rgba(255, 230, 0, 0.97) 100%);
+$mainbg:#ffff;
+
+@mixin flexcenter{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+
+@mixin  rightline {
+    border: $border;
+    height: 120px;
+    border-left: none;
+    border-bottom: none;
+    
+}
+@mixin leftline{
+    border: $border;
+    border-right: none;
+    border-top: none;
+}
+
+@mixin line {
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    
+}
